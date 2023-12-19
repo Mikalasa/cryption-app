@@ -3,7 +3,7 @@ import Background_animation from "./layout/Background_animation"
 import SigninSignup from "./components/SigninSignup"
 import User_Dashboard from "./pages/User_Dashboard"
 import {useEffect, useState} from "react";
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 
 function App() {
