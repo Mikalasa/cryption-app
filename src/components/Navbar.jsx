@@ -39,8 +39,9 @@ function Navbar(props) {
                                 <div className="flex flex-shrink-0 items-center">
                                     <img
                                         className="h-8 w-auto"
-                                        src="/login.png"
-                                    />
+                                        src="https://giphy.com/embed/cmrBE21W0JLR2DC8oz"
+                                        alt=""
+                                        />
                                 </div>
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="hidden sm:ml-6 sm:block">
