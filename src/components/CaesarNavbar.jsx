@@ -5,7 +5,7 @@ function CaesarNavbar() {
         <ul className="dashboard-content-panel-nav bg-white px-4 py-4 space-y-1">
             <li>
                 <NavLink
-                    to="/cryption-app/CaesarCipher/Encryption"
+                    to="/CaesarCipher/Encryption"
                     className={({isActive}) =>
                         isActive
                             ? "block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
@@ -18,7 +18,7 @@ function CaesarNavbar() {
 
             <li>
                 <NavLink
-                    to="/cryption-app/CaesarCipher/Decryption"
+                    to="/CaesarCipher/Decryption"
                     className={({isActive}) =>
                         isActive
                             ? "block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
@@ -31,7 +31,7 @@ function CaesarNavbar() {
 
             <li>
                 <NavLink
-                    to="/cryption-app/CaesarCipher/History"
+                    to="/CaesarCipher/History"
                     className={({isActive}) =>
                         isActive
                             ? "block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"

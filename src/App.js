@@ -31,7 +31,7 @@ function App() {
     }, []);
 
     return (
-        <Router>
+        <Router basename="/cryption-app">
             <div className="App">
                 <Background_animation/>
                 {loggedIn ? (

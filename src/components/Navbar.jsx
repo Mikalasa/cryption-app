@@ -5,9 +5,9 @@ import {NavLink} from 'react-router-dom';
 
 
 const navigation = [
-    { name: 'Caesar cipher', href: '/cryption-app/CaesarCipher'},
-    { name: 'DES', href: '/cryption-app/DES'},
-    { name: 'AES', href: '/cryption-app/AES'},
+    { name: 'Caesar cipher', href: '/CaesarCipher'},
+    { name: 'DES', href: '/DES'},
+    { name: 'AES', href: '/AES'},
 ]
 
 function classNames(...classes) {
