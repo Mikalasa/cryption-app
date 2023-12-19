@@ -40,7 +40,6 @@ function Navbar(props) {
                                     <img
                                         className="h-8 w-auto"
                                         src="/login.gif"
-                                        alt="Your logo"
                                     />
                                 </div>
                                 <div className="hidden sm:ml-6 sm:block">
