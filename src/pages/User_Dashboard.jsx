@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar';
-import {Route, Routes } from 'react-router-dom';
+import {Navigate, Route, Routes} from 'react-router-dom';
 
 import CaesarCipherBoard from "../components/CaesarCipherBoard";
 import DESBoard from "../components/DESBoard";
@@ -13,6 +13,7 @@ function User_Dashboard(props) {
             />
             <div className="dashboard-content">
                 <Routes>
+                    <Route path="/" element={<Navigate replace to="CaesarCipher"/>}/>
                     <Route path="/CaesarCipher/*" element={<CaesarCipherBoard />} />
                     <Route path="/DES/*" element={<DESBoard />} />
                     <Route path="/AES/*" element={<AESBoard />} />

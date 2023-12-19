@@ -24,7 +24,6 @@ function CaesarContentDecryption() {
         }
 
         const message = document.getElementById("message").value;
-        console.log(message);
         const decryptedInfo = caesarCipherDecryption(message, parseInt(step, 10));
 
         if (message.length > 2000) {
@@ -33,7 +32,6 @@ function CaesarContentDecryption() {
         }
         if (decryptedInfo !== null) {
             setDecryptedInfo(decryptedInfo);
-            console.log(decryptedInfo);
         }
 
     };

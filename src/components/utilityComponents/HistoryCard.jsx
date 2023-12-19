@@ -38,7 +38,7 @@ function HistoryCard(props) {
         const historyType = 'caesar';
 
         try {
-            const response = await fetch('http://localhost:5000/historyDelete', {
+            const response = await fetch(`${process.env.REACT_APP_EXPRESSJS_API_URL}/historyDelete`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
