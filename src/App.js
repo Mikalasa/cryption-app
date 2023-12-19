@@ -3,6 +3,9 @@ import Background_animation from "./layout/Background_animation"
 import SigninSignup from "./components/SigninSignup"
 import User_Dashboard from "./pages/User_Dashboard"
 import {useEffect, useState} from "react";
+import { BrowserRouter as Router } from 'react-router-dom';
+
+
 function App() {
     const isLoggedIn = () => {
         return localStorage.getItem("userToken") !== null;
@@ -22,22 +25,26 @@ function App() {
         setLoggedIn(false);
     };
 
+
     useEffect(() => {
         setLoggedIn(isLoggedIn());
     }, []);
 
     return (
-        <div className="App">
-            <Background_animation/>
-            {loggedIn
-                ? <User_Dashboard
-                    logout = {logout}
-                />
-                : <SigninSignup
-                    storeToken = {storeToken}
-                />
-            }
-        </div>
+        <Router>
+            <div className="App">
+                <Background_animation/>
+                {loggedIn ? (
+                    <User_Dashboard
+                        logout={logout}
+                    />
+                ) : (
+                    <SigninSignup
+                        storeToken={storeToken}
+                    />
+                )}
+            </div>
+        </Router>
     );
 }
 

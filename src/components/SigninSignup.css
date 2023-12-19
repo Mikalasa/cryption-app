@@ -64,8 +64,8 @@
 }
 
 #signupsingin-container button.ghost {
-    background-color: transparent;
-    border-color: #FFFFFF;
+    background-color: white;
+    color: #FF4B2B;
 }
 
 #signupsingin-container form {

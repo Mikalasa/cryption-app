@@ -27,7 +27,7 @@ function SigninSignup(props) {
 
 
         try {
-            const response = await axios.post('http://localhost:5000/signup', {
+            const response = await axios.post(`${process.env.REACT_APP_EXPRESSJS_API_URL}/signup`, {
                 username,
                 firstName,
                 lastName,
@@ -36,7 +36,12 @@ function SigninSignup(props) {
             console.log(response.data)
             setIsRightPanelActive(false)
         } catch (error) {
-            console.error('Registration failed', error)
+            if (error.response && error.response.status === 409) {
+                alert('Username already exists, please choose another one');
+            } else {
+                console.error('Registration failed', error);
+                alert('Registration failed');
+            }
         }
     };
 
@@ -48,7 +53,7 @@ function SigninSignup(props) {
         const password = formElements.namedItem("password").value;
 
         try {
-            const response = await axios.post('http://localhost:5000/signin', {
+            const response = await axios.post(`${process.env.REACT_APP_EXPRESSJS_API_URL}/signin`, {
                 username,
                 password,
             });
@@ -56,10 +61,19 @@ function SigninSignup(props) {
             // login success，store JWT
             props.storeToken(response.data.token);
             console.log('User logged in successfully');
-            // jump to user dashboard
+            const { firstName, lastName } = response.data;
+            localStorage.setItem('firstName', firstName);
+            localStorage.setItem('lastName', lastName);
+            localStorage.setItem('username', username);
 
         } catch (error) {
             console.error('Login failed', error);
+
+            if (error.response && error.response.status === 401) {
+                alert(error.response.data);
+            } else {
+                alert('Login failed due to server error');
+            }
         }
     };
 
