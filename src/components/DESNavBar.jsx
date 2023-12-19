@@ -5,7 +5,7 @@ function DESNavbar() {
         <ul className="dashboard-content-panel-nav bg-white px-4 py-4 space-y-1">
             <li>
                 <NavLink
-                    to="/DES/Encryption"
+                    to="/cryption-app/DES/Encryption"
                     className={({isActive}) =>
                         isActive
                             ? "block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
@@ -18,7 +18,7 @@ function DESNavbar() {
 
             <li>
                 <NavLink
-                    to="/DES/Decryption"
+                    to="/cryption-app/DES/Decryption"
                     className={({isActive}) =>
                         isActive
                             ? "block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
@@ -31,7 +31,7 @@ function DESNavbar() {
 
             <li>
                 <NavLink
-                    to="/DES/History"
+                    to="/cryption-app/DES/History"
                     className={({isActive}) =>
                         isActive
                             ? "block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
