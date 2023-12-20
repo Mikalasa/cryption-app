@@ -3,7 +3,7 @@ import Background_animation from "./layout/Background_animation"
 import SigninSignup from "./components/SigninSignup"
 import User_Dashboard from "./pages/User_Dashboard"
 import {useEffect, useState} from "react";
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
     }, []);
 
     return (
-        <Router basename="/cryption-app">
+        <BrowserRouter basename="/cryption-app">
             <div className="App">
                 <Background_animation/>
                 {loggedIn ? (
@@ -44,7 +44,7 @@ function App() {
                     />
                 )}
             </div>
-        </Router>
+        </BrowserRouter>
     );
 }
 
