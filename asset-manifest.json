@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/cryption-app/static/css/main.a76403b3.css",
-    "main.js": "/cryption-app/static/js/main.b1da1fe7.js",
+    "main.css": "/cryption-app/static/css/main.1a7e4541.css",
+    "main.js": "/cryption-app/static/js/main.5229afb5.js",
     "index.html": "/cryption-app/index.html",
-    "main.a76403b3.css.map": "/cryption-app/static/css/main.a76403b3.css.map",
-    "main.b1da1fe7.js.map": "/cryption-app/static/js/main.b1da1fe7.js.map"
+    "main.1a7e4541.css.map": "/cryption-app/static/css/main.1a7e4541.css.map",
+    "main.5229afb5.js.map": "/cryption-app/static/js/main.5229afb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.a76403b3.css",
-    "static/js/main.b1da1fe7.js"
+    "static/css/main.1a7e4541.css",
+    "static/js/main.5229afb5.js"
   ]
 }
